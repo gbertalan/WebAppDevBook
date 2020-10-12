@@ -1,0 +1,62 @@
+body {
+    background: #f9e933;
+}
+
+header, main, footer {
+    min-width: 855px;
+    overflow: auto;
+    /* set overflow to auto,
+    so this element doesn't shrink to 0 when we float its contents. */
+    padding: 20px;
+}
+
+header .container, main .container, footer .container {
+    max-width: 855px;
+    margin: auto;
+}
+
+header {
+    background-color: white;
+}
+
+header h1, main .main-text, footer .contact {
+    float: left;
+    width: 570px;
+}
+
+header nav, main .main-image, footer .sitemap {
+    float: right;
+    width: 285px;
+}
+
+main {
+    background: white;
+    border-top: 2px solid rgb(190, 190, 190);
+    border-bottom: 2px solid rgb(190, 190, 190);
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+li, p, a {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+
+}
+a {
+    color: red;
+    text-decoration: none;
+}
+.logo {
+    font-style: italic;
+    color: darkred;
+}
