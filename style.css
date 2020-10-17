@@ -34,33 +34,53 @@ main {
     border-top: 2px solid rgb(190, 190, 190);
     border-bottom: 2px solid rgb(190, 190, 190);
 }
+
 h1, h2, h3, h4, h5 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 li, p, a {
     font-family: 'Roboto', sans-serif;
 }
+
 h1 {
     font-size: 3em;
 }
+
 h2 {
     font-size: 1.5em;
 }
-h3 {
 
-}
 a {
     color: red;
     text-decoration: none;
 }
+
 a:hover {
     color: white;
     background: darkslategray;
 }
+
 .logo {
     font-style: italic;
     color: darkred;
+}
+
+.tabs a span {
+    display: inline-block;
+    /* A span-nek nincs width-je alapbol, ezert kell az inline-block, tehat ezt az
+    inline dolgot (a span-t) block-ka tesszuk, igy mar tudunk szelesseget beallitani neki. */
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+    background: #ddd;
+    padding: 5px;
+}
+
+.tabs a span.active {
+    background: #bbb;
 }
